@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "./",
+  base: "/Ship-Bloxx-2D/",
   resolve: {
     alias: [
       // General fix: rewrite any malformed pnpm-internal three examples imports
