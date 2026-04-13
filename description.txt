@@ -1,0 +1,23 @@
+High-level overview
+A 2D block-stacking arcade game where blocks swing on a rope from the top of the screen and must be dropped onto a moving platform below. Each block swings pendulum-style; tap or release to drop it. Land blocks on the platform to build a tower—perfect center alignment earns bonus points and a distinct sound. Miss or let blocks fall off the edges and the failed count increases. The platform shrinks and moves as you stack; clouds and stones scroll in the background. A heart/lives system and score drive the endless climb. BGM, drop sounds, and lightning effects add atmosphere.
+
+Genre & tags
+Genre: 2D block-stacking arcade, timing puzzle
+Tags: block stack, stacking, rope swing, pendulum, platform, timing, arcade, endless, mobile
+
+Mechanics & controls
+Inputs: Tap or click to release the swinging block. Blocks swing on a rope from a hook; timing determines where they land.
+Goals: Drop blocks onto the moving platform to stack them. Land in the center for a "perfect" bonus. Avoid dropping blocks off the sides.
+Win/lose: No explicit win—play until game over. Lose when failed drops exceed the limit (lives/hearts). Success count tracks consecutive landings; lightning triggers at certain milestones (e.g., 10, 15).
+Progression: Platform moves and may shrink over time. After each successful land, the platform shifts; the next block spawns. Hard mode can activate when blocks land near screen edges.
+Difficulty curve: Platform movement, block swing speed, and platform size create increasing pressure. Lightning and visual feedback punctuate milestones.
+
+Theme & presentation
+Art style: 2D canvas with sprite images—blocks (standard and perfect), rope, hook, background, clouds, stones, heart, score, tutorial arrows. Gradient sky background; parallax-style scrolling.
+Camera: 2D side view; fixed canvas, responsive.
+Standout elements: Swinging block on rope, moving platform, perfect vs regular landing feedback, lightning flash, tutorial overlay, main menu and game-over modal.
+
+Replayability & variations
+Modes: Single endless run; main menu, start, game over, restart. Optional hard mode triggered by edge landings.
+Customization: config.js (block size, rope height, movement, scoring); asset images for blocks, backgrounds, clouds. gameUserOption for successScore, perfectScore, setGameScore callback.
+Procedural variety: Block swing angle randomized; platform movement and timing create different drop windows each run. Clouds and stones respawn at varied positions.
