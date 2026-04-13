@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/Ship-Bloxx-2D/",
+  // Vercel serves this app from domain root.
+  base: "/",
   resolve: {
     alias: [
       // General fix: rewrite any malformed pnpm-internal three examples imports
